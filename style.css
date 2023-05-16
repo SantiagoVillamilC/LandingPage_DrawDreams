@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Indie Flower", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+}
+
+header {
+  background-color: white;
+}
+
+nav {
+}
+main {
+  background-color: #1c1f33;
+  height: auto;
+}
+@media only screen and (max-width: 767px) {
+  /* Media query de celulares */
+}
+@media only screen and (max-width: 991px) {
+  /* Media query de tablets */
+}
+@media only screen and (min-width: 992px) {
+  /* Media query de PC */
+  header {
+    height: 100vh;
+  }
+  nav {
+    /* background-color: #1c1f33; */
+    height: 10vh;
+    width: 100%;
+    color: #1c1f33;
+    display: flex;
+    align-items: center;
+  }
+  nav h1 {
+    margin-left: 20%;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  .navMenu {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2%;
+  }
+  .navMenu a {
+    color: #1c1f33;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+  }
+  /* .navMenu a:hover {
+    text-decoration: underline;
+    transition: 2s;
+  } */
+  .navMenu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20%;
+    height: 2px;
+    background-color: #42465b;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+
+  .navMenu a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  .navMenu ul {
+  }
+  nav h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  .buttonNav {
+    background-color: #1c1f33;
+    height: 3vh;
+    width: 20%;
+    color: white;
+    border-radius: 15px;
+  }
+  .buttonNav a {
+    color: white;
+  }
+  .classHero {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .classTextHero {
+    grid-column: 1;
+    background-color: white;
+    height: 90vh;
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .classTextHero h1 {
+    font-family: "Lobster", cursive;
+    font-size: 3rem;
+    padding-bottom: 10vh;
+    margin-right: 5%;
+  }
+  .classTextHero span {
+    font-family: "Lobster", cursive;
+  }
+  .classHero h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    padding-bottom: 10vh;
+  }
+  .classImageHero {
+    grid-column: 2;
+    width: 45vw;
+    height: 90vh;
+  }
+  #imageHero {
+    height: 100%;
+    width: 100%;
+    /* filter: invert(100%); */
+  }
+  .classButtonHero1 {
+    background-color: #1c1f33;
+    width: 15vw;
+    height: 10vh;
+    float: left;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    font-size: 1.5rem;
+  }
+  .classButtonHero1 {
+    background-color: #1c1f33;
+    border-width: 3px;
+    border-color: #1c1f33;
+    border-style: solid;
+    width: 15vw;
+    height: 10vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    font-size: 1.5rem;
+    animation: all 2s ease-in-out;
+    color: white;
+    text-decoration: none;
+  }
+  .classButtonHero2 {
+    /* background-color: #1c1f33;    */
+    border-style: solid;
+    border-color: #1c1f33;
+    border-width: 3px;
+    width: 15vw;
+    height: 10vh;
+    float: left;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    font-size: 1.5rem;
+    color: #1c1f33;
+  }
+
+  .classButtonHero1:hover {
+    transition: 1s;
+    border-style: solid;
+    border-color: #1c1f33;
+    background-color: white;
+    color: #1c1f33;
+    /* font-size: 2rem; */
+  }
+  .classButtonHero2:hover {
+    transition: 1s;
+    border-style: solid;
+    border-color: #1c1f33;
+    background-color: #1c1f33;
+    color: white;
+    /* font-size: 2rem; */
+  }
+
+  main {
+    /* margin-top: 10vh; */
+  }
+  .wave {
+    height: 15vh;
+    margin-bottom: 4vh;
+  }
+  .classPossibilities {
+    height: 70vh;
+    /* background-color: red;  */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .classPossibilitiesTitle {
+    font-family: "Dancing Script", cursive;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    height: auto;
+    width: 80%;
+    line-height: 1.5;
+    padding-left: 5%;
+  }
+  .classPossibilitiesList {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* text-align: center; */
+    height: auto;
+    width: 60%;
+    font-size: 1.5rem;
+    /* padding-left: 5%; */
+    padding-right: 5%;
+  }
+  .classPossibilitiesList ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    list-style: url(public/vineta.png);
+    color: white;
+  }
+  .claseTarjetas {
+    width: 100%;
+    background-color: white;
+    /* background-image: url(public/taylor-leopold-COE-CIGj8VA-unsplash.jpg); */
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: grid;
+    /* box-shadow: 0 0 15px 2px white; */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-attachment: fixed;
+  }
+  /* .claseTarjetasCursos {
+    
+    background-color: #42465b;
+    background-color: rgba(66, 70, 91, 0.7);
+    
+    
+    border-radius: 25px;
+    margin-right: 10%;
+    box-shadow: 0 0 10px 2px white;
+    backdrop-filter: blur(5px);
+  } */
+  .claseTarjetasCursos {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 5%;
+  }
+  .claseTarjetas h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .claseTarjetas p {
+    font-size: 1.5rem;
+    color: #888888;
+  }
+  .claseTarjetasUsuarios {
+    grid-row: 2;
+    grid-column: 3;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .claseTarjetasProfesores {
+    grid-row: 2;
+    grid-column: 4;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+  .clasePresentaciones {
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+  }
+  .clasePresentacion1 {
+    grid-column: 1;
+    /* background-color: #f2f2f2; */
+    width: 40vh;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: dashed;
+  }
+  .clasePresentacion2 {
+    grid-column: 2;
+    width: 40vh;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: dashed;
+  }
+  .clasePresentacion3 {
+    grid-column: 3;
+    width: 40vh;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: dashed;
+  }
+  .clasePresentacion4 {
+    grid-column: 4;
+    width: 40vh;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    border-style: dashed;
+  }
+  .clasePresentaciones img {
+    width: 80%;
+    height: 33vh;
+  }
+  .claseImagenesPresentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .claseTextoPresentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    gap: 5%;
+  }
+  .buttonPresentaciones {
+    grid-row: 3;
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #42465b;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 5%;
+  }
+  .buttonPresentaciones:hover {
+    background-color: black;
+  }
+  .buttonPresentaciones:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 64, 129, 0.3);
+  }
+  .claseInspiracion {
+    background-color: white;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 5%;
+  }
+  .claseFormulario {
+    /* background-color: aqua; */
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .claseImagenFormulario {
+    /* grid-column: 1; */
+    position: relative;
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .claseCamposFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    text-align: center;
+    z-index: 1;
+    height: 85%;
+    width: 40%;
+    backdrop-filter: blur(10px);
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 15px;
+    padding-top: 10px;
+  }
+  .claseCamposFormulario h3 {
+    margin-bottom: 10%;
+  }
+  .claseCamposFormulario button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff4081;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .claseCamposFormulario button:hover {
+    background-color: #e91e63;
+  }
+  .claseCamposFormulario button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 64, 129, 0.3);
+  }
+  .claseParejasFormulario {
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .claseCamposFormulario label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-bottom: 8px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(242, 242, 242, 0.3);
+    border-radius: 5px;
+  }
+
+  /* Estilos para los inputs de tipo texto, email, password y date */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus {
+    outline: none;
+    border-color: #ff4081;
+    box-shadow: 0 0 0 3px rgba(255, 64, 129, 0.3);
+  }
+  footer {
+    background-color: #1c1f33;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    color: white;
+  }
+  footer .divisionFooter {
+    height: 0.4vh;
+    background-color: white;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  .claseVolver {
+    background-color: #29304e;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .claseVolver:hover{
+    background-color: #3a4166;
+  }
+}

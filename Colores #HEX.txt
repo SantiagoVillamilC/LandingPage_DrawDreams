@@ -1,0 +1,14 @@
+#FFC857 - amarillo brillante
+#E9724C - naranja intenso
+#C5283D - rojo oscuro
+#72253D - magenta profundo
+#1C1F33 - negro azulado
+
+======================================================
+#FFD700: un amarillo brillante y dorado que puede usarse para resaltar títulos o acentos.
+#FF69B4: un rosa intenso y vibrante que puede usarse para agregar un toque femenino a la página.
+#00FF00: un verde lima brillante que puede usarse para crear un contraste interesante.
+#FF8C00: un naranja intenso que puede usarse para crear un aspecto atrevido y llamativo.
+#1E90FF: un azul brillante y vibrante que puede usarse para agregar un toque refrescante a la página.
+#FF00FF: un rosa fuerte y vibrante que puede usarse para agregar un toque divertido y caprichoso.
+#FF0000: un rojo intenso y vibrante que puede usarse para atraer la atención y crear un aspecto emocionante.
